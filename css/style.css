@@ -282,6 +282,32 @@ main #price .flex article li{
 
 /* final de price */
 
+/* inicio de news */
+
+main #news .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space);
+}
+
+main #news .flex article a{
+    display: block;
+    text-decoration: none;
+    color: var(--mainColor);
+}
+
+main #news .flex article a p{
+    color: var(--secondaryColor)
+}
+
+main #news .flex article a h3{
+    font-size: 2rem;
+}
+
+
+
+/* final de news */
+
 
 
 
@@ -354,6 +380,26 @@ main #price .flex article li{
         text-align: left;
     }
 
+    main section h2{
+        text-align: left;
+    }
+
+    main #news article{
+        width: calc( 50% - var(--space) );
+    }
+
+    main #news article figure {
+        max-height: 200px;
+        overflow: hidden;
+    }
+
+}
+
+@media(min-width: 1000px){
+    main #news article figure {
+        max-height: 280px;
+        overflow: hidden;
+    }
 }
 
 @media(min-width: 87.5rem){
@@ -363,5 +409,10 @@ main #price .flex article li{
 
     footer .container{
         padding: 0;
+    }
+
+     main #news article figure {
+        max-height: 400px;
+        overflow: hidden;
     }
 }
