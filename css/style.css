@@ -128,7 +128,7 @@ footer .container{
 
 /* estilos genericos de la seccion los hago atacando a section */
 main section {
-    padding: var(--space) 1.25rem;  
+    padding: calc(var(--space)*4) 1.25rem;  
 }
 
 main #projects .grid{
@@ -206,6 +206,32 @@ main .more a{
 
 /* fin projects */
 
+/* inicio our expertise */
+
+main #ourexpertise .flex{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space);
+}
+main #ourexpertise article{
+    text-align: center;
+}
+main #ourexpertise article figure{
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+main #ourexpertise article h3{
+    font-size: 2rem;
+    padding: var(--space) 0;
+}
+
+main #ourexpertise article p{
+    color: var(--secondaryColor);
+    font-size: 1.25em;
+}
+/* fin our expertise */
+
 
 
 
@@ -255,6 +281,18 @@ main .more a{
     main #projects .grid  article:last-child{
         grid-column: 2;
         grid-row: 1/3;
+    }
+
+    main #ourexpertise .flex{
+        flex-direction: row;
+    }
+    main #ourexpertise article{
+        text-align: left;
+    }
+
+    main #ourexpertise article figure{
+        max-width: 100px;
+        margin: 0;
     }
 
 }
